@@ -1,7 +1,7 @@
 # Reconnaissance Tool v1.0
 This is a tool which has been made to see the open ports on an IPv4 address or a domain name. It is helpful in performing audits of a network by scanning some of the known ports stored in a _.csv_ file.
 
-> [!DISCLAIMER]
+> [!WARNING]
 > This tool is for <ins>_educational_</ins> and <ins>_authorized security auditing_</ins> purposes only. Unauthorized scanning of networks or hosts is illegal and unethical. I assume no liability for misuse of this tool or any damage caused by its execution. <ins>**Always obtain explicit permission before scanning any target**</ins>.
 
 ## Features
