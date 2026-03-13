@@ -11,14 +11,17 @@ This is a tool which has been made to see the open ports on an IPv4 address or a
 + Based on the severity of the open port, it is shown in bold red, red, yellow or green in decreasing order of severity.
 
 ## Installation
-There is not much to do in the installation point of view, except:
+There is not much to do in the installation point of view, except:  
 ```pip install -r requirements.txt```
+
+> [!IMPORTANT]
+> It is absolutely necessary to do this before running the program to ensure the program runs properly. This program uses some libraries which need to be installed.
 
 ## Usage
 I've made sure the tool is easy to use. The command takes three arguments:
 + -f or --file which takes a _.csv_ file for input. It defaults to _services.csv_.
 + -t or --target which takes either an IPv4 address or a domain name
-+ -h or --help which tells you the same thing I typed here.
++ -h or --help which tells you the same thing I typed here.  
 e.g.
 ```
 python project.py --t 127.0.0.1
@@ -44,14 +47,14 @@ python project.py --help
 ## Advisor Contribution
 While the core logic, architecture and security focus of this tool were designed and implemented by me, I utilized <ins>Google's Gemini AI</ins> as a high-level strategic advisor throughout the development process.
 The AI's specific contributions were:
-+ **Library Selection**: Suggesting the transition from ```pyfiglet``` and ```tabulate``` to <ins>Rich</ins> library to create a cohesive and professional CLI and dynamic color-coded triage system.
++ **Library Selection**: Suggesting the transition from ```pyfiglet``` and ```tabulate``` to ```Rich``` library to create a cohesive and professional CLI and dynamic color-coded triage system.
 + **Concurrency Optimisation**: Advising on the use of ```itertools.repeat``` within ```ThreadPoolExecutor``` to ensure memory-efficient iteration over the target IP/domain and port lists.
 + **Testing Strategy**: Providing the conceptual framework for using ```unittest.mock``` to simulate socket behaviours, allowing the ```scan_port``` function to be tested without having an internet connection.
 + **Code Review**: Acting as a <ins>brutally honest</ins> peer to identify oppurtunity costs, such as removing a dysfunctional progress bar temporarily in favor of a stable, high-performance engine.
 All final implementations, debugging of mock assertions, and ethical design choices were my own responsibility as the **Lead Developer**. 
 
 ## Testing
-To test some of the functions used in this project, simply use:
+To test some of the functions used in this project, simply use:  
 ```pytest test_project.py```
 
 ## Future Improvements
@@ -60,3 +63,5 @@ To test some of the functions used in this project, simply use:
 + Make the code compatible with ports being checked in a range.
 + Add an option for a full scan to check for ports from **1** to **65,535**.
 + Rely on an external library or API to check the severity of all the ports in the range, instead of a _.csv_ file.
+
+### Video Demo: [Watch Here!](InsertURLHere)

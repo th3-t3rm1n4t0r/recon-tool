@@ -14,7 +14,7 @@ def main():
     ports = load_ports(args.file)
     target_ip = validate_target(args.target)
 
-    console.print(Panel("[magenta]Recon-Tool v1.0[magenta]",
+    console.print(Panel("[magenta]Reconnaissance Tool v1.0[magenta]",
                             subtitle = "Made by Abhishek Karmakar"))
     time.sleep(0.02)
     try:
