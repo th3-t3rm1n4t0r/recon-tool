@@ -64,4 +64,4 @@ To test some of the functions used in this project, simply use:
 + Add an option for a full scan to check for ports from **1** to **65,535**.
 + Rely on an external library or API to check the severity of all the ports in the range, instead of a _.csv_ file.
 
-### Video Demo: [Watch Here!](InsertURLHere)
+### Video Demo: [Watch Here!](https://youtu.be/RW7SiVjvEmI)
